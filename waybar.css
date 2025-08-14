@@ -1,0 +1,174 @@
+/* Poolside Theme for Waybar */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: bold;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(248, 250, 252, 0.95);
+    color: #1e293b;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    border-bottom: 3px solid #0ea5e9;
+}
+
+button {
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    background-color: transparent;
+    color: #475569;
+}
+
+#workspaces button:hover {
+    background: rgba(14, 165, 233, 0.2);
+    color: #0ea5e9;
+}
+
+#workspaces button.active {
+    background: #0ea5e9;
+    color: #ffffff;
+}
+
+#workspaces button.urgent {
+    background-color: #fb923c;
+    color: #ffffff;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad {
+    padding: 0 10px;
+    color: #1e293b;
+    background: rgba(248, 250, 252, 0.8);
+    margin: 3px 2px;
+    border-radius: 6px;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #tray {
+    margin-right: 0;
+}
+
+#clock {
+    background: #0ea5e9;
+    color: #ffffff;
+}
+
+#battery {
+    background-color: #0ea5e9;
+    color: #ffffff;
+}
+
+#battery.charging, #battery.plugged {
+    background-color: #fbbf24;
+    color: #1e293b;
+}
+
+@keyframes blink {
+    to {
+        background-color: #fb923c;
+        color: #ffffff;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #fb923c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cpu {
+    background-color: #0369a1;
+    color: #ffffff;
+}
+
+#memory {
+    background-color: #fbbf24;
+    color: #1e293b;
+}
+
+#disk {
+    background-color: #fb923c;
+    color: #ffffff;
+}
+
+#network {
+    background-color: #0ea5e9;
+    color: #ffffff;
+}
+
+#network.disconnected {
+    background-color: #fb923c;
+    color: #ffffff;
+}
+
+#pulseaudio {
+    background-color: #fbbf24;
+    color: #1e293b;
+}
+
+#pulseaudio.muted {
+    background-color: #475569;
+    color: #ffffff;
+}
+
+#temperature {
+    background-color: #0369a1;
+    color: #ffffff;
+}
+
+#temperature.critical {
+    background-color: #fb923c;
+    color: #ffffff;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #fb923c;
+}
+
+#idle_inhibitor {
+    background-color: #0369a1;
+    color: #ffffff;
+}
+
+#idle_inhibitor.activated {
+    background-color: #fbbf24;
+    color: #1e293b;
+}

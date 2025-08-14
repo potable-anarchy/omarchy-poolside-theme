@@ -1,0 +1,66 @@
+/* Poolside Theme for Wofi */
+window {
+    margin: 0px;
+    border: 2px solid #0ea5e9;
+    background-color: rgba(248, 250, 252, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(3, 105, 161, 0.3);
+}
+
+#input {
+    margin: 10px;
+    border: 2px solid #0ea5e9;
+    color: #1e293b;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+#text {
+    margin: 5px;
+    border: none;
+    color: #1e293b;
+    font-weight: bold;
+} 
+
+#entry {
+    background-color: transparent;
+    border-radius: 6px;
+    margin: 2px;
+    padding: 8px;
+}
+
+#entry:selected {
+    background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+#entry:hover {
+    background-color: rgba(14, 165, 233, 0.2);
+    border-radius: 6px;
+}
+
+#text:selected {
+    color: #ffffff;
+}
