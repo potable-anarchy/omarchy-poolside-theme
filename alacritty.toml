@@ -1,13 +1,39 @@
 [colors.primary]
 background = "#fff7ed"
 foreground = "#1e293b"
+dim_foreground = "#64748b"
+bright_foreground = "#0f172a"
 
 [colors.cursor]
-text = "#f8fafc"
+text = "#fff7ed"
 cursor = "#0ea5e9"
 
+[colors.vi_mode_cursor]
+text = "#fff7ed"
+cursor = "#fb923c"
+
+[colors.search.matches]
+foreground = "#fff7ed"
+background = "#64748b"
+
+[colors.search.focused_match]
+foreground = "#fff7ed"
+background = "#0ea5e9"
+
+[colors.footer_bar]
+foreground = "#fff7ed"
+background = "#64748b"
+
+[colors.hints.start]
+foreground = "#fff7ed"
+background = "#fbbf24"
+
+[colors.hints.end]
+foreground = "#fff7ed"
+background = "#64748b"
+
 [colors.selection]
-text = "#f8fafc"
+text = "#fff7ed"
 background = "#0369a1"
 
 [colors.normal]
