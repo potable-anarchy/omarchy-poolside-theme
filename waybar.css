@@ -53,13 +53,20 @@ button {
 #network,
 #pulseaudio,
 #custom-media,
-#tray,
 #mode,
 #idle_inhibitor,
 #scratchpad {
     padding: 0 10px;
     color: #1e293b;
     background: rgba(248, 250, 252, 0.8);
+    margin: 3px 2px;
+    border-radius: 6px;
+}
+
+#tray {
+    padding: 0 10px;
+    color: #ffffff;
+    background: #fb923c;
     margin: 3px 2px;
     border-radius: 6px;
 }
@@ -163,6 +170,7 @@ button {
     background-color: #fb923c;
 }
 
+
 #idle_inhibitor {
     background-color: #0369a1;
     color: #ffffff;
@@ -171,4 +179,34 @@ button {
 #idle_inhibitor.activated {
     background-color: #fbbf24;
     color: #1e293b;
+}
+
+/* System tray menus and tooltips */
+tooltip {
+    background: #0ea5e9;
+    color: #ffffff;
+    border: 2px solid #0369a1;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+tooltip label {
+    color: #ffffff;
+    padding: 4px;
+}
+
+menu {
+    background: #0ea5e9;
+    color: #ffffff;
+    border: 2px solid #0369a1;
+    border-radius: 8px;
+}
+
+menu > menuitem {
+    padding: 8px;
+    color: #ffffff;
+}
+
+menu > menuitem:hover {
+    background: #0369a1;
 }
